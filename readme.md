@@ -1,7 +1,9 @@
 # DeFaust
 Taking the devil out of the deal.
 
-DeFaust is a peer-to-peer network that stores and maintains data about entities, specifically people, in a secure way. It makes this data accessible to authorized users while preventing access to the unencrypted data by unauthorized users. It provides a distributed, fault tolerant storage infrastructure while guaranteeing control of the data to the owner of the data. It is intended to form the backbone of any number of applications that want to generate and use profile data while simultaneously guaranteeing that that data remains completely under the control of the person the data pertains to. DeFaust is intended to allow users to realize the power of big data and data science without fear of what another entity might be doing with that data.
+DeFaust is a peer-to-peer network that stores and maintains data about entities, specifically people, in a secure way. It makes this data accessible to authorized users while preventing access to the unencrypted data by unauthorized users. It provides a distributed, fault tolerant storage infrastructure while guaranteeing control of the data to the owner of the data. It is intended to form the backbone of any number of applications that want to generate and use profile data while simultaneously guaranteeing that that data remains completely under the control of the person the data pertains to.
+
+DeFaust is intended to allow users to realize the power of big data and data science without fear of what another entity might be doing with that data, in other words, taking the devil out of the deal.
 
 Each identity in the DeFaust network is a combination of
 * a public and private key
