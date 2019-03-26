@@ -39,6 +39,7 @@ For achievements gained through witnesses, and maybe all achievements, other use
 ## Duels
 Like challenge mechanism, but not based on an achievement / accomplishment.
 
+## Etc
 Allow users to associate media to events, ie, movies and pictures.
 
 The theme of peer review and approval would be repeated throughout the system. Part of the idea is that if "witnesses" witnessing a feat are reviewed and found to be false or inaccurate they would be flagged as untrusworthy (dishonorable) and not permitted to witness / judge / score for others. The "challenge" mechanic could possibly contribute to this as well (though I think it may be more effective merely as a threat).
