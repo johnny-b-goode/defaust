@@ -22,21 +22,21 @@ Clients could, and would probably eventually need to, archive, deep archive, and
 
 The client could have limits on storage used. Further limits could restrict bandwidth used, processing power, etc. By monitoring these things storage could be allowed to expand until one of the thresholds is exceeded.
 
-##Important Considerations
+## Important Considerations
 All connections would need to be secure.
 
-##Important Questions to Answer
+## Important Questions to Answer
 * How do we guarantee that somebody requesting to read data does not keep that data?.
 * What if a key is generated based on a seed time and once the seed time has gone beyond a certain point the key is no longer valid? This provides a data aging mechanism, but it does not guarantee the destruction of the data once it has exceeded it's time to live.
 * How would network segmentation be handled? What if the network were segmented (sharded) by design? What if every instance / identity had it's own network?
 
-##Feats / Achievements / Accomplishments
+## Feats / Achievements / Accomplishments
 Requires sign offs by multiple witnesses or a "credible authority". For example, completing a training course might result in an achievement from a "credible authority" and completing a more informal achievement and getting signatures from witnesses might also yield an achievement.
 
-##Challenge Mechanism
+## Challenge Mechanism
 For achievements gained through witnesses, and maybe all achievements, other users / players could challenge. If the person challenged can perform the feat then that person wins the challenge. If they cannot then the challenger wins. This could be gamified by then allowing the person successfully completing the challenge to in turn challenge their challenger.
 
-##Duels
+## Duels
 Like challenge mechanism, but not based on an achievement / accomplishment.
 
 Allow users to associate media to events, ie, movies and pictures.
