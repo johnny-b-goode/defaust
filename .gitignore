@@ -1,0 +1,8 @@
+bin
+lib
+doc
+jar
+junit_results
+war
+/info.txt
+*.class
