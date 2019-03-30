@@ -13,7 +13,7 @@
 	<property name="rsrc" value="${basedir}/rsrc" />
 	<property name="rslt" value="${basedir}/junit_results" />
 	<property name="tst" value="${basedir}/tst" />
-	<property name="tests" value="net.scientifichooliganism.defaust.vo.PersonTest" />
+	<property name="tests" value="**/*Test*.class" />
 	<property name="war" value="${basedir}/war" />
 	<property name="zip" value="${basedir}/zip" />
 	<property name="info.txt" value="${basedir}/info.txt" />
@@ -210,7 +210,11 @@
 				<pathelement path="${tst}" />
 			</classpath>
 			<formatter type="xml" />
-			<test name="${tests}" todir="${rslt}" />
+			<batchtest todir="${rslt}">
+				<fileset dir="${tst}">
+					<include name="${tests}" />
+				</fileset>
+			</batchtest>
 		</junit>
 	</target>
 
