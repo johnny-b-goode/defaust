@@ -24,10 +24,12 @@ public abstract class Entity {
 		String ret = new String();
 
 		for (Name n : name) {
-			ret += n.getName();
+			if (n.getName().length() > 0) {
+				ret += n.getName() + " ";
+			}
 		}
 
-		return ret;
+		return ret.trim();
 	}
 
 	public List getNames () {
