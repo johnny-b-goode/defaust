@@ -11,7 +11,7 @@ import com.google.gson.JsonSerializer;
 import com.google.gson.JsonSerializationContext;
 
 import java.lang.reflect.Type;
-import java.text.SimpleDateFormat;
+//import java.text.SimpleDateFormat;
 
 public class PersonAdapter implements JsonDeserializer<Person>, JsonSerializer<Person> {
 	@Override
@@ -31,9 +31,10 @@ public class PersonAdapter implements JsonDeserializer<Person>, JsonSerializer<P
 	public JsonElement serialize(Person person, Type type, JsonSerializationContext jsonSerializationContext) {
 		JsonObject jsonObject = new JsonObject();
 
-		if(person.getDateOfBirth() != null){
-			jsonObject.addProperty("dateOfBirth", new SimpleDateFormat("yyyy-MM-dd").format(person.getDateOfBirth()));
-		}
+		//if(person.getDateOfBirth() != null){
+		//	jsonObject.addProperty("dateOfBirth", Config.getDateFormat().format(person.getDateOfBirth()));
+		//}
+		jsonObject.add("dateOfBirth", jsonSerializationContext.serialize(Config.getDateFormat().format(person.getDateOfBirth())));
 
 		return jsonObject;
 	}

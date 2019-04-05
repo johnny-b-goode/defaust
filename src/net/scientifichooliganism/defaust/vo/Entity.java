@@ -1,7 +1,9 @@
 package net.scientifichooliganism.defaust.vo;
 
+import net.scientifichooliganism.defaust.Config;
+
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
+//import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Vector;
@@ -88,7 +90,7 @@ public abstract class Entity {
 		}
 
 		try {
-			setDateOfCreation(new SimpleDateFormat("yyyy-MM-dd").parse(dateIn));
+			setDateOfCreation(Config.getDateFormat().parse(dateIn));
 		}
 		catch (Exception e) {
 			e.printStackTrace();
