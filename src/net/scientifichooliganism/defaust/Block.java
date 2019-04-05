@@ -36,7 +36,7 @@ public class Block {
 		toHash += data;
 
 		try {
-			byte[] hash = MessageDigest.getInstance("MD5").digest(toHash.getBytes("UTF-8"));
+			byte[] hash = MessageDigest.getInstance("SHA-256").digest(toHash.getBytes("UTF-8"));
 
 			//TODO: I think this can be cleaned up a bit.
 			for (int i = 0; i < hash.length; i++) {
